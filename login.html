@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 15px;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #1B1B1F;
+      font-family: monospace;
+    }
+
+    .login-container {
+      background-color: #202127;
+      padding: 30px;
+      border-radius: 15px;
+      width: 100%;
+      max-width: 350px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      box-sizing: border-box;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .small-text {
+      color: rgba(255,255,255,0.5);
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .input-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #1B1B1F;
+      border-radius: 10px;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .input-group input {
+      flex: 1;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: white;
+      font-size: 16px;
+    }
+
+    .login-container .loginb {
+      width: 75%;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      background-color: pink;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .login-container a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+    }
+
+    .login-container a:hover {
+      text-decoration: underline;
+    }
+
+    .icon {
+      color: rgba(255,255,255,0.75);
+      width: 20px;
+      height: 20px;
+    }
+
+    .alt-login {
+      display: flex;
+      gap: 15px;
+    }
+
+    .alt-login button {
+      flex: 1;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      background-color: #1B1B1F;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .alt-login button:hover {
+      background-color: #2a2a2a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <p class="small-text">Welcome!</p>
+
+    <div class="input-group">
+      <i data-lucide="user" class="icon"></i>
+      <input type="text" placeholder="Username">
+    </div>
+    <div class="input-group">
+      <i data-lucide="lock" class="icon"></i>
+      <input type="password" placeholder="Password">
+    </div>
+
+    <div style="width: 100%; display:flex; justify-content:flex-end;">
+      <a href="#" class="small-text">Forgot password?</a>
+    </div>
+
+    <div class="loginb">
+      <a href="loading.html">Login</a>
+    </div> 
+
+    <div class="alt-login">
+        <button>
+        <i data-lucide="chrome"></i>
+      </button>
+      <button>
+        <i data-lucide="facebook"></i>
+      </button>
+      <button>
+        <i data-lucide="github"></i>
+      </button>
+      <button>
+        <i data-lucide="linkedin"></i>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+</html>

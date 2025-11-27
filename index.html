@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width = device-width, initial-scale=1.0" charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<html lang="en">
+    <div class="dashboard-container">
+        <div class="H"><i icon-name="menu" style="width: 28px; height: 28px; color: rgba(255, 255, 255,0.75);"></i><p class="titleH">dashboard</p></div>
+        <div class="bin-state" style="display: inline-flex;">
+            <div id="icon-holder"><i data-lucide="life-buoy" class="icon"></i></div>
+            <div class="info-boat" id="card-text">
+                <p class="small-text">Connected!</p>
+                <p class="big-text">Seabin 1 <i data-lucide="chevron-down" style="width: 24px; height: 24px; color: rgba(255,255,255,0.75);"></i></p>
+            </div>
+        </div>
+        <div class="grid">
+        <div class="big-card">
+            <div class="info-battery" id="card-text">
+                <p class="small-text" style="position: relative;">Battery</p>
+            </div>
+            <div class="battery" style="padding: 15px; align-items: center; display: flex;"> <i data-lucide="zap" style="width: 24px; height: 24px; color: rgba(255,255,255,0.75);"></i> <p class="big-text" style="position:relative; margin: 5px;">66%</p></div>
+        </div>
+            <div class="big-card">
+                <div class="info-bin" id="card-text">
+                <p class="small-text" style="position: relative;">Bin</p>
+            </div>
+            <div class="bin-bar" style="padding: 15px; align-items: center; display: flex;"> <i data-lucide="weight" style="width: 24px; height: 24px; color: rgba(255,255,255,0.75);"></i> <p class="big-text" style="position:relative; margin: 5px;">5kg</p></div>
+            </div>
+        </div>
+        <div class="bin-state" style="margin-top: 15px; padding: 15px; height: max-content;">
+            <p class="small-text">Water Quality</p>
+            <p class="big-text" style="align-content:center;width: max-content;">Great! <i data-lucide="sparkles" style="width: 16px; height: 16px; color: rgba(255,255,255,0.75);"></i></p>
+            <p style="color: rgba(255,255,255,0.5); font-weight: lighter;">pH level: 6.5 | Temperature: 40C</p>
+        </div>
+        <div class="grid">
+            <div class="bin-state" style="padding: 15px; height: max-content;">
+            <p class="small-text">Left Motor</p>
+            <p class="big-text" style="align-content:center;width: max-content;">Working <i data-lucide="check" style="width: 16px; height: 16px; color: rgba(255,255,255,0.75);"></i></p>
+            <p style="color: rgba(255,255,255,0.5); font-weight: lighter;">Power Output: 10V</p>
+        </div>
+         <div class="bin-state" style="padding: 15px; height: max-content;">
+            <p class="small-text">Right Motor</p>
+            <p class="big-text" style="align-content:center;width: max-content;">Working <i data-lucide="check" style="width: 16px; height: 16px; color: rgba(255,255,255,0.75);"></i></p>
+            <p style="color: rgba(255,255,255,0.5); font-weight: lighter;">Power Output: 10V</p>
+        </div>
+        </div>
+        <div class="bin-state" style="padding: 15px; height: max-content;">
+            <p class="small-text" style="margin-bottom: 15px;">Alerts</p>
+            <div class="bin-state" style="background-color: #1b1b1f; height: 25vh; margin-bottom: 0; padding: 15px;">
+                <p style="color: rgba(255,255,255,0.5); margin-bottom: 5px;">[12:00AM] - Collected 26g of trash.</p>
+                <p style="color: rgba(255,255,255,0.5); margin-bottom: 5px;">[11:39AM] - Collected 15g of trash.</p>
+                <p style="color: rgba(255,255,255,0.5); margin-bottom: 5px;">[11:00AM] - Collected 5g of trash.</p>
+                <p style="color: rgba(255,255,255,0.5); margin-bottom: 5px;">[10:25AM] - Collected 30g of trash.</p>
+                <p style="color: rgba(255,255,255,0.5); margin-bottom: 5px;">...</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+            <a href="index.html" id="bottom-button"><i icon-name="layout-dashboard" id="bottom-button"></i></a>
+            <a href="controls.html" id="bottom-button"><i icon-name="gamepad-directional" id="bottom-button"></i></a>
+            <a href="settings.html" id="bottom-button"><i icon-name="settings-2" id="bottom-button"></i></a>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>lucide.createIcons()</script>
+</html>
