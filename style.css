@@ -91,6 +91,7 @@ body {
     grid-template-columns: repeat(2,1fr);
     gap: 15px;
     box-sizing: border-box;
+    flexwrap: wrap;
 }
 
 .grid-rpm {
@@ -247,4 +248,5 @@ p{margin: 0;}
     background-color: #202127;
     border-radius: 12px;
     align-self: center;
+
 }
