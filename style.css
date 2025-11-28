@@ -75,7 +75,7 @@ body {
 }
 
 .big-text {
-    color:rgba(255,255,255,0.75); font-weight: bold; font-size: 3.2vw;
+    color:rgba(255,255,255,0.75); font-weight: bold; font-size: min(3.2vw,32px);
 }
 
 .rpm-text {
